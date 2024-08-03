@@ -1,0 +1,61 @@
+.login.app {
+  margin: auto;
+  width: 30%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-logo {
+  display: inline-block;
+  background-image: url("../../assets/Amazon_logo.svg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  flex-grow: 0;
+  margin-bottom: 20px;
+}
+form {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form h2 {
+  font-size: clamp(1.5rem, 2.5vw + 1.5rem, 2rem);
+  font-weight: 500;
+  margin: 10px 0;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+form div label {
+  font-weight: bold;
+  font-size: clamp(0.8rem, 2.5vw + 0.8rem, 0.8rem);
+  margin-bottom: 2px;
+}
+form div input {
+  height: 40px;
+  padding: 5px;
+}
+form p {
+  font-size: clamp(0.9rem, 2.5vw + 0.9rem, 0.9rem);
+}
+form .btn {
+  border: 0;
+  outline: none;
+  height: 40px;
+  cursor: pointer;
+}
+form .btn.login {
+  background-color: #cd9042;
+}
+form .btn.createAccount {
+  border: 1px solid rgba(0, 0, 0, 0.17);
+}
