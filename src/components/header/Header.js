@@ -5,7 +5,7 @@ import "./header.css";
 import { useAuth } from "../../context/GlobalState";
 import { auth } from "../../firebase";
 export const Header = () => {
-  const { user } = useAuth();
+  const { user, basket } = useAuth();
   const handleAuthClick = () => {
     if (user) {
       auth.signOut();
@@ -47,7 +47,7 @@ export const Header = () => {
           <div className="chheckout">
             <div className="text">
               <div className="shopCart"></div>
-              <span>0</span>
+              <span>{basket.length}</span>
             </div>
           </div>
         </Link>

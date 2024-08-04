@@ -1,0 +1,997 @@
+[debug] [2024-08-03T23:04:32.199Z] ----------------------------------------------------------------------
+[debug] [2024-08-03T23:04:32.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-08-03T23:04:32.201Z] CLI Version:   13.15.0
+[debug] [2024-08-03T23:04:32.201Z] Platform:      win32
+[debug] [2024-08-03T23:04:32.201Z] Node Version:  v18.16.0
+[debug] [2024-08-03T23:04:32.202Z] Time:          Sun Aug 04 2024 01:04:32 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2024-08-03T23:04:32.202Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-03T23:04:32.277Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-03T23:04:32.278Z] > authorizing via signed-in user (sayedrady61@gmail.com)
+[debug] [2024-08-03T23:04:32.278Z] [iam] checking project clone-2b54e for permissions ["firebase.projects.get"]
+[debug] [2024-08-03T23:04:32.279Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions [none]
+[debug] [2024-08-03T23:04:32.279Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions x-goog-quota-user=projects/clone-2b54e
+[debug] [2024-08-03T23:04:32.280Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-03T23:04:33.303Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions 200
+[debug] [2024-08-03T23:04:33.304Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-03T23:04:33.305Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e [none]
+[debug] [2024-08-03T23:04:33.736Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e 200
+[debug] [2024-08-03T23:04:33.736Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e {"projectId":"clone-2b54e","projectNumber":"1049329106711","displayName":"amazon-clone","name":"projects/clone-2b54e","resources":{"hostingSite":"clone-2b54e"},"state":"ACTIVE","etag":"1_e166c208-a325-43c6-a3dd-8ce72a50606a"}
+[info] 
+[info] === Serving from 'C:\Users\PC\amazonClone\amazon-clone'...
+[info] 
+[debug] [2024-08-03T23:04:33.746Z] defaultcredentials: writing to file C:\Users\PC\AppData\Roaming\firebase\sayedrady61_gmail_com_application_default_credentials.json
+[debug] [2024-08-03T23:04:33.747Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites 
+[debug] [2024-08-03T23:04:33.749Z] Setting GAC to C:\Users\PC\AppData\Roaming\firebase\sayedrady61_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\PC\\AppData\\Roaming\\firebase\\sayedrady61_gmail_com_application_default_credentials.json"}}
+[debug] [2024-08-03T23:04:33.750Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig [none]
+[debug] [2024-08-03T23:04:34.130Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig 200
+[debug] [2024-08-03T23:04:34.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig {"projectId":"clone-2b54e","storageBucket":"clone-2b54e.appspot.com"}
+[debug] [2024-08-03T23:04:35.158Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites 200
+[debug] [2024-08-03T23:04:35.158Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites {"sites":[{"name":"projects/clone-2b54e/sites/clone-2b54e","defaultUrl":"https://clone-2b54e.web.app","appId":"1:1049329106711:web:c02129df4aafedc94dc152","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-03T23:04:35.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config [none]
+[debug] [2024-08-03T23:04:35.969Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config 200
+[debug] [2024-08-03T23:04:35.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config {"projectId":"clone-2b54e","appId":"1:1049329106711:web:c02129df4aafedc94dc152","storageBucket":"clone-2b54e.appspot.com","apiKey":"AIzaSyAG7faysAmPhy9Sgvtffj8kI7mW-gfj2U8","authDomain":"clone-2b54e.firebaseapp.com","messagingSenderId":"1049329106711","measurementId":"G-HL2V3CG2JC"}
+[debug] [2024-08-03T23:04:35.993Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e [none]
+[debug] [2024-08-03T23:04:36.394Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e 200
+[debug] [2024-08-03T23:04:36.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e {"projectId":"clone-2b54e","projectNumber":"1049329106711","displayName":"amazon-clone","name":"projects/clone-2b54e","resources":{"hostingSite":"clone-2b54e"},"state":"ACTIVE","etag":"1_e166c208-a325-43c6-a3dd-8ce72a50606a"}
+[info] i  functions: Watching "C:\Users\PC\amazonClone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[info] i  hosting[clone-2b54e]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-2b54e]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-08-03T23:04:36.410Z] Validating nodejs source
+[debug] [2024-08-03T23:04:37.786Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:04:37.787Z] Building nodejs source
+[debug] [2024-08-03T23:04:37.787Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:04:37.788Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:04:37.793Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8150
+
+[debug] [2024-08-03T23:04:38.200Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-2b54e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-2b54e/us-central1/api)."}}
+[debug] [2024-08-03T23:06:21.438Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api-2024-08-03T23:06:21.438Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-03T23:06:21.439Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api-2024-08-03T23:06:21.438Z"],"workRunningCount":1}
+[debug] [2024-08-03T23:06:21.439Z] Accepted request GET /clone-2b54e/us-central1/api --> us-central1-api
+[debug] [2024-08-03T23:06:21.442Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-03T23:06:21.443Z] [functions] Got req.url=/clone-2b54e/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api, mapping to path=/"}}
+[debug] [2024-08-03T23:06:21.448Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-03T23:06:21.449Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-08-03T23:06:22.288Z] [runtime-status] [16644] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.289Z] [runtime-status] [16644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.289Z] [runtime-status] [16644] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-03T23:06:22.290Z] [runtime-status] [16644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.448Z] [runtime-status] [16644] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-03T23:06:22.448Z] [runtime-status] [16644] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-03T23:06:22.448Z] [runtime-status] [16644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.449Z] [runtime-status] [16644] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.451Z] [runtime-status] [16644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-03T23:06:22.451Z] [runtime-status] [16644] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-03T23:06:22.570Z] [runtime-status] [16644] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-03T23:06:22.570Z] [runtime-status] [16644] Listening to port: \\?\pipe\fire_emu_750e45f1a37d182e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [16644] Listening to port: \\\\?\\pipe\\fire_emu_750e45f1a37d182e"}}
+[debug] [2024-08-03T23:06:22.661Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: IDLE"}}
+[debug] [2024-08-03T23:06:22.661Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-03T23:06:22.661Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: BUSY"}}
+[debug] [2024-08-03T23:06:22.666Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.7334ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.7334ms"}}
+[debug] [2024-08-03T23:06:22.666Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: IDLE"}}
+[debug] [2024-08-03T23:06:22.667Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-08-03T23:06:22.667Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-08-03T23:06:22.667Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-03T23:06:22.718Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-08-03T23:11:09.684Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-03T23:11:10.688Z] Validating nodejs source
+[debug] [2024-08-03T23:11:11.841Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:11:11.841Z] Building nodejs source
+[debug] [2024-08-03T23:11:11.841Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:11:11.842Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:11:11.846Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8273
+
+[error] C:\Users\PC\amazonClone\amazon-clone\functions\index.js:20
+    });
+    ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at loadModule (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-08-03T23:11:11.989Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-08-03T23:11:36.354Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-03T23:11:37.356Z] Validating nodejs source
+[debug] [2024-08-03T23:11:38.477Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:11:38.477Z] Building nodejs source
+[debug] [2024-08-03T23:11:38.477Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:11:38.478Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:11:38.482Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8353
+
+[debug] [2024-08-03T23:11:38.848Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-03T23:11:38.862Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-08-03T23:11:38.862Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: FINISHING"}}
+[debug] [2024-08-03T23:11:38.869Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: exited"}}
+[debug] [2024-08-03T23:11:38.869Z] [worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-33b09063-170f-4ac1-955e-0cbb402599ca]: FINISHED"}}
+[debug] [2024-08-03T23:13:27.059Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-03T23:13:28.060Z] Validating nodejs source
+[debug] [2024-08-03T23:13:29.198Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:13:29.198Z] Building nodejs source
+[debug] [2024-08-03T23:13:29.198Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:13:29.199Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:13:29.203Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-08-03T23:13:29.206Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8502
+
+[debug] [2024-08-03T23:13:29.558Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-03T23:13:30.208Z] Validating nodejs source
+[debug] [2024-08-03T23:13:31.297Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:13:31.297Z] Building nodejs source
+[debug] [2024-08-03T23:13:31.297Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:13:31.297Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:13:31.302Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8526
+
+[debug] [2024-08-03T23:13:31.664Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-03T23:40:00.719Z] File C:\Users\PC\amazonClone\amazon-clone\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\package.json changed, reloading triggers"}}
+[debug] [2024-08-03T23:40:00.755Z] File C:\Users\PC\amazonClone\amazon-clone\functions\package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\package-lock.json changed, reloading triggers"}}
+[debug] [2024-08-03T23:40:01.756Z] Validating nodejs source
+[debug] [2024-08-03T23:40:02.962Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-03T23:40:02.963Z] Building nodejs source
+[debug] [2024-08-03T23:40:02.963Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-03T23:40:02.963Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-03T23:40:02.969Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8070
+
+[debug] [2024-08-03T23:40:03.377Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:22:19.896Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-04T00:22:20.898Z] Validating nodejs source
+[debug] [2024-08-04T00:22:23.119Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:22:23.119Z] Building nodejs source
+[debug] [2024-08-04T00:22:23.119Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-08-04T00:22:23.120Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:22:23.124Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8669
+
+[debug] [2024-08-04T00:22:23.504Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:23:51.366Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-04T00:23:52.368Z] Validating nodejs source
+[debug] [2024-08-04T00:23:53.490Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:23:53.490Z] Building nodejs source
+[debug] [2024-08-04T00:23:53.490Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:23:53.491Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:23:53.495Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8074
+
+[debug] [2024-08-04T00:23:53.863Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:28:15.347Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T00:28:15.349Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-08-04T00:28:15.349Z] CLI Version:   13.15.0
+[debug] [2024-08-04T00:28:15.349Z] Platform:      win32
+[debug] [2024-08-04T00:28:15.349Z] Node Version:  v18.16.0
+[debug] [2024-08-04T00:28:15.350Z] Time:          Sun Aug 04 2024 02:28:15 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2024-08-04T00:28:15.350Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T00:28:15.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T00:28:15.426Z] > authorizing via signed-in user (sayedrady61@gmail.com)
+[debug] [2024-08-04T00:28:15.426Z] [iam] checking project clone-2b54e for permissions ["firebase.projects.get"]
+[debug] [2024-08-04T00:28:15.427Z] > refreshing access token with scopes: []
+[debug] [2024-08-04T00:28:15.428Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-04T00:28:15.429Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-04T00:28:15.905Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-04T00:28:15.905Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-04T00:28:15.939Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions [none]
+[debug] [2024-08-04T00:28:15.939Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions x-goog-quota-user=projects/clone-2b54e
+[debug] [2024-08-04T00:28:15.940Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-04T00:28:17.000Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions 200
+[debug] [2024-08-04T00:28:17.000Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-2b54e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-04T00:28:17.003Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e [none]
+[debug] [2024-08-04T00:28:17.564Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e 200
+[debug] [2024-08-04T00:28:17.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e {"projectId":"clone-2b54e","projectNumber":"1049329106711","displayName":"amazon-clone","name":"projects/clone-2b54e","resources":{"hostingSite":"clone-2b54e"},"state":"ACTIVE","etag":"1_e166c208-a325-43c6-a3dd-8ce72a50606a"}
+[info] 
+[info] === Serving from 'C:\Users\PC\amazonClone\amazon-clone'...
+[info] 
+[debug] [2024-08-04T00:28:17.574Z] defaultcredentials: writing to file C:\Users\PC\AppData\Roaming\firebase\sayedrady61_gmail_com_application_default_credentials.json
+[debug] [2024-08-04T00:28:17.574Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites 
+[debug] [2024-08-04T00:28:17.577Z] Setting GAC to C:\Users\PC\AppData\Roaming\firebase\sayedrady61_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\PC\\AppData\\Roaming\\firebase\\sayedrady61_gmail_com_application_default_credentials.json"}}
+[debug] [2024-08-04T00:28:17.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig [none]
+[debug] [2024-08-04T00:28:18.049Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig 200
+[debug] [2024-08-04T00:28:18.049Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/adminSdkConfig {"projectId":"clone-2b54e","storageBucket":"clone-2b54e.appspot.com"}
+[debug] [2024-08-04T00:28:19.245Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites 200
+[debug] [2024-08-04T00:28:19.245Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-2b54e/sites {"sites":[{"name":"projects/clone-2b54e/sites/clone-2b54e","defaultUrl":"https://clone-2b54e.web.app","appId":"1:1049329106711:web:c02129df4aafedc94dc152","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T00:28:19.246Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config [none]
+[debug] [2024-08-04T00:28:20.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config 200
+[debug] [2024-08-04T00:28:20.032Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e/webApps/1:1049329106711:web:c02129df4aafedc94dc152/config {"projectId":"clone-2b54e","appId":"1:1049329106711:web:c02129df4aafedc94dc152","storageBucket":"clone-2b54e.appspot.com","apiKey":"AIzaSyAG7faysAmPhy9Sgvtffj8kI7mW-gfj2U8","authDomain":"clone-2b54e.firebaseapp.com","messagingSenderId":"1049329106711","measurementId":"G-HL2V3CG2JC"}
+[debug] [2024-08-04T00:28:20.043Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e [none]
+[debug] [2024-08-04T00:28:20.422Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e 200
+[debug] [2024-08-04T00:28:20.422Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-2b54e {"projectId":"clone-2b54e","projectNumber":"1049329106711","displayName":"amazon-clone","name":"projects/clone-2b54e","resources":{"hostingSite":"clone-2b54e"},"state":"ACTIVE","etag":"1_e166c208-a325-43c6-a3dd-8ce72a50606a"}
+[info] i  functions: Watching "C:\Users\PC\amazonClone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[info] i  hosting[clone-2b54e]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-2b54e]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-08-04T00:28:20.439Z] Validating nodejs source
+[debug] [2024-08-04T00:28:21.571Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:28:21.572Z] Building nodejs source
+[debug] [2024-08-04T00:28:21.572Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:28:21.574Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:28:21.579Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8274
+
+[debug] [2024-08-04T00:28:21.938Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-2b54e/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-2b54e/us-central1/api)."}}
+[debug] [2024-08-04T00:33:54.571Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api-2024-08-04T00:33:54.571Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-04T00:33:54.571Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api-2024-08-04T00:33:54.571Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:33:54.572Z] Accepted request GET /clone-2b54e/us-central1/api --> us-central1-api
+[debug] [2024-08-04T00:33:54.574Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-04T00:33:54.574Z] [functions] Got req.url=/clone-2b54e/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:33:54.580Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-04T00:33:54.581Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-08-04T00:33:55.445Z] [runtime-status] [7764] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.446Z] [runtime-status] [7764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.446Z] [runtime-status] [7764] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-04T00:33:55.447Z] [runtime-status] [7764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.601Z] [runtime-status] [7764] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-04T00:33:55.602Z] [runtime-status] [7764] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:33:55.602Z] [runtime-status] [7764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.603Z] [runtime-status] [7764] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.605Z] [runtime-status] [7764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:33:55.605Z] [runtime-status] [7764] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:33:55.723Z] [runtime-status] [7764] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-04T00:33:55.724Z] [runtime-status] [7764] Listening to port: \\?\pipe\fire_emu_4ddaf6fb4f98bd77 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [7764] Listening to port: \\\\?\\pipe\\fire_emu_4ddaf6fb4f98bd77"}}
+[debug] [2024-08-04T00:33:55.799Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: IDLE"}}
+[debug] [2024-08-04T00:33:55.799Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-04T00:33:55.800Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: BUSY"}}
+[debug] [2024-08-04T00:33:55.806Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.3747ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.3747ms"}}
+[debug] [2024-08-04T00:33:55.808Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: IDLE"}}
+[debug] [2024-08-04T00:33:55.808Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-08-04T00:33:55.808Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-08-04T00:33:55.809Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-04T00:34:07.216Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-04T00:34:08.217Z] Validating nodejs source
+[debug] [2024-08-04T00:34:09.462Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:34:09.463Z] Building nodejs source
+[debug] [2024-08-04T00:34:09.463Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:34:09.464Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:34:09.469Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-08-04T00:34:09.473Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-04T00:34:09.536Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8100
+
+[debug] [2024-08-04T00:34:09.837Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:34:09.849Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-08-04T00:34:09.850Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: FINISHING"}}
+[debug] [2024-08-04T00:34:09.857Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: exited"}}
+[debug] [2024-08-04T00:34:09.857Z] [worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-7c79945b-48a6-4896-baeb-320efb241105]: FINISHED"}}
+[debug] [2024-08-04T00:34:10.537Z] Validating nodejs source
+[debug] [2024-08-04T00:34:11.623Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:34:11.623Z] Building nodejs source
+[debug] [2024-08-04T00:34:11.623Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:34:11.624Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:34:11.628Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-08-04T00:34:11.632Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8644
+
+[debug] [2024-08-04T00:34:11.981Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:34:12.633Z] Validating nodejs source
+[debug] [2024-08-04T00:34:13.735Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:34:13.735Z] Building nodejs source
+[debug] [2024-08-04T00:34:13.735Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:34:13.736Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:34:13.740Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8090
+
+[debug] [2024-08-04T00:34:14.093Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:34:41.038Z] File C:\Users\PC\amazonClone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-08-04T00:34:42.038Z] Validating nodejs source
+[debug] [2024-08-04T00:34:43.202Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-08-04T00:34:43.202Z] Building nodejs source
+[debug] [2024-08-04T00:34:43.202Z] Failed to find version of module node: reached end of search path C:\Users\PC\amazonClone\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:34:43.203Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T00:34:43.207Z] Found firebase-functions binary at 'C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8927
+
+[debug] [2024-08-04T00:34:43.622Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-08-04T00:56:06.644Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.644Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-04T00:56:06.645Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.644Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:56:06.645Z] Accepted request POST /clone-2b54e/us-central1/api/payments/create?total=0 --> us-central1-api
+[debug] [2024-08-04T00:56:06.647Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-04T00:56:06.647Z] [functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0"}}
+[debug] [2024-08-04T00:56:06.647Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:56:06.652Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-04T00:56:06.652Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-08-04T00:56:06.654Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.654Z"],"queueLength":1,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.644Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:56:06.654Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.644Z","/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.654Z"],"workRunningCount":2}
+[debug] [2024-08-04T00:56:06.654Z] Accepted request POST /clone-2b54e/us-central1/api/payments/create?total=0 --> us-central1-api
+[debug] [2024-08-04T00:56:06.656Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-04T00:56:06.656Z] [functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=0, mapping to path=/payments/create?total=0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:56:06.662Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-04T00:56:06.663Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2024-08-04T00:56:07.669Z] [runtime-status] [14080] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.671Z] [runtime-status] [14080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.671Z] [runtime-status] [14080] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-04T00:56:07.672Z] [runtime-status] [14080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.673Z] [runtime-status] [3928] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.674Z] [runtime-status] [3928] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.675Z] [runtime-status] [3928] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-04T00:56:07.675Z] [runtime-status] [3928] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.860Z] [runtime-status] [14080] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-04T00:56:07.861Z] [runtime-status] [14080] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:07.861Z] [runtime-status] [14080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.862Z] [runtime-status] [14080] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.863Z] [runtime-status] [3928] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-04T00:56:07.863Z] [runtime-status] [3928] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:07.863Z] [runtime-status] [3928] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.864Z] [runtime-status] [14080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.865Z] [runtime-status] [14080] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:07.865Z] [runtime-status] [3928] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.866Z] [runtime-status] [3928] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:07.866Z] [runtime-status] [3928] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:08.021Z] [runtime-status] [3928] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-04T00:56:08.021Z] [runtime-status] [14080] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-04T00:56:08.021Z] [runtime-status] [14080] Listening to port: \\?\pipe\fire_emu_cde8ab68787e08de {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [14080] Listening to port: \\\\?\\pipe\\fire_emu_cde8ab68787e08de"}}
+[debug] [2024-08-04T00:56:08.021Z] [runtime-status] [3928] Listening to port: \\?\pipe\fire_emu_9542efb91a2ddba0 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [3928] Listening to port: \\\\?\\pipe\\fire_emu_9542efb91a2ddba0"}}
+[debug] [2024-08-04T00:56:08.066Z] [worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: IDLE"}}
+[debug] [2024-08-04T00:56:08.066Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-04T00:56:08.067Z] [worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: BUSY"}}
+[debug] [2024-08-04T00:56:08.082Z] [worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: IDLE"}}
+[debug] [2024-08-04T00:56:08.082Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-04T00:56:08.083Z] [worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: BUSY"}}
+[info] >  C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\Error.js:10 {"user":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10\r"}}
+[info] >              return new StripeInvalidRequestError(rawStripeError); {"user":"            return new StripeInvalidRequestError(rawStripeError);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m             return new StripeInvalidRequestError(rawStripeError);\r"}}
+[info] >                     ^ {"user":"                   ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m                    ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents {"user":"StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents\r"}}
+[info] >      at StripeError.generate (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\Error.js:10:20) {"user":"    at StripeError.generate (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at StripeError.generate (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10:20)\r"}}
+[info] >      at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\RequestSender.js:105:54) {"user":"    at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\RequestSender.js:105:54)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\RequestSender.js:105:54)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) { {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r"}}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   type: 'StripeInvalidRequestError',\r"}}
+[info] >    raw: { {"user":"  raw: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   raw: {\r"}}
+[info] >      code: 'parameter_invalid_integer', {"user":"    code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     code: 'parameter_invalid_integer',\r"}}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >      message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents', {"user":"    message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents',\r"}}
+[info] >      param: 'amount', {"user":"    param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     param: 'amount',\r"}}
+[info] >      request_log_url: 'https://dashboard.stripe.com/test/logs/req_aHCVMr7v4I64Js?t=1722732967', {"user":"    request_log_url: 'https://dashboard.stripe.com/test/logs/req_aHCVMr7v4I64Js?t=1722732967',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     request_log_url: 'https://dashboard.stripe.com/test/logs/req_aHCVMr7v4I64Js?t=1722732967',\r"}}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'invalid_request_error',\r"}}
+[info] >      headers: { {"user":"    headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     headers: {\r"}}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       server: 'nginx',\r"}}
+[info] >        date: 'Sun, 04 Aug 2024 00:56:07 GMT', {"user":"      date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r"}}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-type': 'application/json',\r"}}
+[info] >        'content-length': '663', {"user":"      'content-length': '663',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-length': '663',\r"}}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       connection: 'keep-alive',\r"}}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-credentials': 'true',\r"}}
+[info] >        'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE', {"user":"      'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r"}}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-origin': '*',\r"}}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-max-age': '300',\r"}}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'cache-control': 'no-cache, no-store',\r"}}
+[info] >        'content-security-policy': "report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'", {"user":"      'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r"}}
+[info] >        'cross-origin-opener-policy-report-only': 'same-origin; report-to="coop"', {"user":"      'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r"}}
+[info] >        'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a', {"user":"      'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a',\r"}}
+[info] >        'original-request': 'req_aHCVMr7v4I64Js', {"user":"      'original-request': 'req_aHCVMr7v4I64Js',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'original-request': 'req_aHCVMr7v4I64Js',\r"}}
+[info] >        'report-to': '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=payins-bapi-srv"}],"include_subdomains":true}', {"user":"      'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r"}}
+[info] >        'reporting-endpoints': 'coop="https://q.stripe.com/coop-report?s=payins-bapi-srv"', {"user":"      'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r"}}
+[info] >        'request-id': 'req_aHCVMr7v4I64Js', {"user":"      'request-id': 'req_aHCVMr7v4I64Js',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'request-id': 'req_aHCVMr7v4I64Js',\r"}}
+[info] >        'stripe-version': '2024-06-20', {"user":"      'stripe-version': '2024-06-20',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'stripe-version': '2024-06-20',\r"}}
+[info] >        vary: 'Origin', {"user":"      vary: 'Origin',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       vary: 'Origin',\r"}}
+[info] >        'x-content-type-options': 'nosniff', {"user":"      'x-content-type-options': 'nosniff',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-content-type-options': 'nosniff',\r"}}
+[info] >        'x-stripe-priority-routing-enabled': 'true', {"user":"      'x-stripe-priority-routing-enabled': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-stripe-priority-routing-enabled': 'true',\r"}}
+[info] >        'x-stripe-routing-context-priority-tier': 'api-testmode', {"user":"      'x-stripe-routing-context-priority-tier': 'api-testmode',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-stripe-routing-context-priority-tier': 'api-testmode',\r"}}
+[info] >        'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >      }, {"user":"    },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },\r"}}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     statusCode: 400,\r"}}
+[info] >      requestId: 'req_aHCVMr7v4I64Js' {"user":"    requestId: 'req_aHCVMr7v4I64Js'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     requestId: 'req_aHCVMr7v4I64Js'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   rawType: 'invalid_request_error',\r"}}
+[info] >    code: 'parameter_invalid_integer', {"user":"  code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'parameter_invalid_integer',\r"}}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >    param: 'amount', {"user":"  param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   param: 'amount',\r"}}
+[info] >    detail: undefined, {"user":"  detail: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   detail: undefined,\r"}}
+[info] >    headers: { {"user":"  headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   headers: {\r"}}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     server: 'nginx',\r"}}
+[info] >      date: 'Sun, 04 Aug 2024 00:56:07 GMT', {"user":"    date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r"}}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-type': 'application/json',\r"}}
+[info] >      'content-length': '663', {"user":"    'content-length': '663',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-length': '663',\r"}}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     connection: 'keep-alive',\r"}}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-credentials': 'true',\r"}}
+[info] >      'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE', {"user":"    'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r"}}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-origin': '*',\r"}}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-max-age': '300',\r"}}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'cache-control': 'no-cache, no-store',\r"}}
+[info] >      'content-security-policy': "report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'", {"user":"    'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r"}}
+[info] >      'cross-origin-opener-policy-report-only': 'same-origin; report-to="coop"', {"user":"    'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r"}}
+[info] >      'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a', {"user":"    'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'idempotency-key': 'stripe-node-retry-e1f7ec06-68ae-45bf-9475-1d62d5eb092a',\r"}}
+[info] >      'original-request': 'req_aHCVMr7v4I64Js', {"user":"    'original-request': 'req_aHCVMr7v4I64Js',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'original-request': 'req_aHCVMr7v4I64Js',\r"}}
+[info] >      'report-to': '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=payins-bapi-srv"}],"include_subdomains":true}', {"user":"    'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r"}}
+[info] >      'reporting-endpoints': 'coop="https://q.stripe.com/coop-report?s=payins-bapi-srv"', {"user":"    'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r"}}
+[info] >      'request-id': 'req_aHCVMr7v4I64Js', {"user":"    'request-id': 'req_aHCVMr7v4I64Js',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'request-id': 'req_aHCVMr7v4I64Js',\r"}}
+[info] >      'stripe-version': '2024-06-20', {"user":"    'stripe-version': '2024-06-20',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'stripe-version': '2024-06-20',\r"}}
+[info] >      vary: 'Origin', {"user":"    vary: 'Origin',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     vary: 'Origin',\r"}}
+[info] >      'x-content-type-options': 'nosniff', {"user":"    'x-content-type-options': 'nosniff',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-content-type-options': 'nosniff',\r"}}
+[info] >      'x-stripe-priority-routing-enabled': 'true', {"user":"    'x-stripe-priority-routing-enabled': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-stripe-priority-routing-enabled': 'true',\r"}}
+[info] >      'x-stripe-routing-context-priority-tier': 'api-testmode', {"user":"    'x-stripe-routing-context-priority-tier': 'api-testmode',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-stripe-routing-context-priority-tier': 'api-testmode',\r"}}
+[info] >      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    requestId: 'req_aHCVMr7v4I64Js', {"user":"  requestId: 'req_aHCVMr7v4I64Js',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   requestId: 'req_aHCVMr7v4I64Js',\r"}}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statusCode: 400,\r"}}
+[info] >    charge: undefined, {"user":"  charge: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   charge: undefined,\r"}}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   decline_code: undefined,\r"}}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_intent: undefined,\r"}}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: undefined,\r"}}
+[info] >    payment_method_type: undefined, {"user":"  payment_method_type: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_type: undefined,\r"}}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_intent: undefined,\r"}}
+[info] >    source: undefined {"user":"  source: undefined\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: undefined\r"}}
+[info] >  } {"user":"}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.16.0 {"user":"Node.js v18.16.0\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.16.0\r"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2024-08-04T00:56:08.653Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:06.644Z"],"workRunningCount":1}
+[info] >  C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\Error.js:10 {"user":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10\r"}}
+[info] >              return new StripeInvalidRequestError(rawStripeError); {"user":"            return new StripeInvalidRequestError(rawStripeError);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m             return new StripeInvalidRequestError(rawStripeError);\r"}}
+[info] >                     ^ {"user":"                   ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m                    ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents {"user":"StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m StripeInvalidRequestError: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents\r"}}
+[info] >      at StripeError.generate (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\Error.js:10:20) {"user":"    at StripeError.generate (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at StripeError.generate (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\Error.js:10:20)\r"}}
+[info] >      at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\Users\PC\amazonClone\amazon-clone\functions\node_modules\stripe\cjs\RequestSender.js:105:54) {"user":"    at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\RequestSender.js:105:54)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at res.toJSON.then.Error_js_1.StripeAPIError.message (C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\stripe\\cjs\\RequestSender.js:105:54)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) { {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r"}}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   type: 'StripeInvalidRequestError',\r"}}
+[info] >    raw: { {"user":"  raw: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   raw: {\r"}}
+[info] >      code: 'parameter_invalid_integer', {"user":"    code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     code: 'parameter_invalid_integer',\r"}}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >      message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents', {"user":"    message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     message: 'The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents',\r"}}
+[info] >      param: 'amount', {"user":"    param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     param: 'amount',\r"}}
+[info] >      request_log_url: 'https://dashboard.stripe.com/test/logs/req_xbABmWu9PGGTWQ?t=1722732967', {"user":"    request_log_url: 'https://dashboard.stripe.com/test/logs/req_xbABmWu9PGGTWQ?t=1722732967',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     request_log_url: 'https://dashboard.stripe.com/test/logs/req_xbABmWu9PGGTWQ?t=1722732967',\r"}}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'invalid_request_error',\r"}}
+[info] >      headers: { {"user":"    headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     headers: {\r"}}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       server: 'nginx',\r"}}
+[info] >        date: 'Sun, 04 Aug 2024 00:56:07 GMT', {"user":"      date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r"}}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-type': 'application/json',\r"}}
+[info] >        'content-length': '663', {"user":"      'content-length': '663',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-length': '663',\r"}}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       connection: 'keep-alive',\r"}}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-credentials': 'true',\r"}}
+[info] >        'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE', {"user":"      'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r"}}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-allow-origin': '*',\r"}}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'access-control-max-age': '300',\r"}}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'cache-control': 'no-cache, no-store',\r"}}
+[info] >        'content-security-policy': "report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'", {"user":"      'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r"}}
+[info] >        'cross-origin-opener-policy-report-only': 'same-origin; report-to="coop"', {"user":"      'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r"}}
+[info] >        'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2', {"user":"      'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2',\r"}}
+[info] >        'original-request': 'req_xbABmWu9PGGTWQ', {"user":"      'original-request': 'req_xbABmWu9PGGTWQ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'original-request': 'req_xbABmWu9PGGTWQ',\r"}}
+[info] >        'report-to': '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=payins-bapi-srv"}],"include_subdomains":true}', {"user":"      'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r"}}
+[info] >        'reporting-endpoints': 'coop="https://q.stripe.com/coop-report?s=payins-bapi-srv"', {"user":"      'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r"}}
+[info] >        'request-id': 'req_xbABmWu9PGGTWQ', {"user":"      'request-id': 'req_xbABmWu9PGGTWQ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'request-id': 'req_xbABmWu9PGGTWQ',\r"}}
+[info] >        'stripe-version': '2024-06-20', {"user":"      'stripe-version': '2024-06-20',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'stripe-version': '2024-06-20',\r"}}
+[info] >        vary: 'Origin', {"user":"      vary: 'Origin',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       vary: 'Origin',\r"}}
+[info] >        'x-content-type-options': 'nosniff', {"user":"      'x-content-type-options': 'nosniff',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-content-type-options': 'nosniff',\r"}}
+[info] >        'x-stripe-priority-routing-enabled': 'true', {"user":"      'x-stripe-priority-routing-enabled': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-stripe-priority-routing-enabled': 'true',\r"}}
+[info] >        'x-stripe-routing-context-priority-tier': 'api-testmode', {"user":"      'x-stripe-routing-context-priority-tier': 'api-testmode',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'x-stripe-routing-context-priority-tier': 'api-testmode',\r"}}
+[info] >        'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >      }, {"user":"    },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },\r"}}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     statusCode: 400,\r"}}
+[info] >      requestId: 'req_xbABmWu9PGGTWQ' {"user":"    requestId: 'req_xbABmWu9PGGTWQ'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     requestId: 'req_xbABmWu9PGGTWQ'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   rawType: 'invalid_request_error',\r"}}
+[info] >    code: 'parameter_invalid_integer', {"user":"  code: 'parameter_invalid_integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'parameter_invalid_integer',\r"}}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',\r"}}
+[info] >    param: 'amount', {"user":"  param: 'amount',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   param: 'amount',\r"}}
+[info] >    detail: undefined, {"user":"  detail: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   detail: undefined,\r"}}
+[info] >    headers: { {"user":"  headers: {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   headers: {\r"}}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     server: 'nginx',\r"}}
+[info] >      date: 'Sun, 04 Aug 2024 00:56:07 GMT', {"user":"    date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     date: 'Sun, 04 Aug 2024 00:56:07 GMT',\r"}}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-type': 'application/json',\r"}}
+[info] >      'content-length': '663', {"user":"    'content-length': '663',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-length': '663',\r"}}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     connection: 'keep-alive',\r"}}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-credentials': 'true',\r"}}
+[info] >      'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE', {"user":"    'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',\r"}}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-allow-origin': '*',\r"}}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',\r"}}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'access-control-max-age': '300',\r"}}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'cache-control': 'no-cache, no-store',\r"}}
+[info] >      'content-security-policy': "report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'", {"user":"    'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'content-security-policy': \"report-uri https://q.stripe.com/csp-report?p=v1%2Fpayment_intents; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'\",\r"}}
+[info] >      'cross-origin-opener-policy-report-only': 'same-origin; report-to="coop"', {"user":"    'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'cross-origin-opener-policy-report-only': 'same-origin; report-to=\"coop\"',\r"}}
+[info] >      'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2', {"user":"    'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'idempotency-key': 'stripe-node-retry-3a8b04c7-d82b-40d8-9da5-b72386a911a2',\r"}}
+[info] >      'original-request': 'req_xbABmWu9PGGTWQ', {"user":"    'original-request': 'req_xbABmWu9PGGTWQ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'original-request': 'req_xbABmWu9PGGTWQ',\r"}}
+[info] >      'report-to': '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=payins-bapi-srv"}],"include_subdomains":true}', {"user":"    'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'report-to': '{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"}],\"include_subdomains\":true}',\r"}}
+[info] >      'reporting-endpoints': 'coop="https://q.stripe.com/coop-report?s=payins-bapi-srv"', {"user":"    'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'reporting-endpoints': 'coop=\"https://q.stripe.com/coop-report?s=payins-bapi-srv\"',\r"}}
+[info] >      'request-id': 'req_xbABmWu9PGGTWQ', {"user":"    'request-id': 'req_xbABmWu9PGGTWQ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'request-id': 'req_xbABmWu9PGGTWQ',\r"}}
+[info] >      'stripe-version': '2024-06-20', {"user":"    'stripe-version': '2024-06-20',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'stripe-version': '2024-06-20',\r"}}
+[info] >      vary: 'Origin', {"user":"    vary: 'Origin',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     vary: 'Origin',\r"}}
+[info] >      'x-content-type-options': 'nosniff', {"user":"    'x-content-type-options': 'nosniff',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-content-type-options': 'nosniff',\r"}}
+[info] >      'x-stripe-priority-routing-enabled': 'true', {"user":"    'x-stripe-priority-routing-enabled': 'true',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-stripe-priority-routing-enabled': 'true',\r"}}
+[info] >      'x-stripe-routing-context-priority-tier': 'api-testmode', {"user":"    'x-stripe-routing-context-priority-tier': 'api-testmode',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'x-stripe-routing-context-priority-tier': 'api-testmode',\r"}}
+[info] >      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'\r"}}
+[info] >    }, {"user":"  },\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },\r"}}
+[info] >    requestId: 'req_xbABmWu9PGGTWQ', {"user":"  requestId: 'req_xbABmWu9PGGTWQ',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   requestId: 'req_xbABmWu9PGGTWQ',\r"}}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statusCode: 400,\r"}}
+[info] >    charge: undefined, {"user":"  charge: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   charge: undefined,\r"}}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   decline_code: undefined,\r"}}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_intent: undefined,\r"}}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: undefined,\r"}}
+[info] >    payment_method_type: undefined, {"user":"  payment_method_type: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_type: undefined,\r"}}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_intent: undefined,\r"}}
+[info] >    source: undefined {"user":"  source: undefined\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: undefined\r"}}
+[info] >  } {"user":"}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.16.0 {"user":"Node.js v18.16.0\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.16.0\r"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2024-08-04T00:56:08.668Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-04T00:56:08.668Z] [worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: exited"}}
+[debug] [2024-08-04T00:56:08.668Z] [worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fda37024-712b-45c3-9f30-d93d943b228c]: FINISHED"}}
+[debug] [2024-08-04T00:56:08.672Z] [worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: exited"}}
+[debug] [2024-08-04T00:56:08.672Z] [worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-f39ee728-e987-48db-9e03-e6986436fb29]: FINISHED"}}
+[debug] [2024-08-04T00:56:22.109Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.109Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-08-04T00:56:22.109Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.109Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:56:22.109Z] Accepted request POST /clone-2b54e/us-central1/api/payments/create?total=4400 --> us-central1-api
+[debug] [2024-08-04T00:56:22.111Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-04T00:56:22.111Z] [functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=4400, mapping to path=/payments/create?total=4400 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=4400, mapping to path=/payments/create?total=4400"}}
+[debug] [2024-08-04T00:56:22.111Z] [worker-pool] Cleaned up workers for us-central1-api: 2 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 2 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:56:22.115Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-04T00:56:22.115Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-08-04T00:56:22.116Z] [work-queue] {"queuedWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.116Z"],"queueLength":1,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.109Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:56:22.116Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.109Z","/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.116Z"],"workRunningCount":2}
+[debug] [2024-08-04T00:56:22.116Z] Accepted request POST /clone-2b54e/us-central1/api/payments/create?total=4400 --> us-central1-api
+[debug] [2024-08-04T00:56:22.118Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-08-04T00:56:22.119Z] [functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=4400, mapping to path=/payments/create?total=4400 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-2b54e/us-central1/api/payments/create?total=4400, mapping to path=/payments/create?total=4400"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T00:56:22.122Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-08-04T00:56:22.123Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2024-08-04T00:56:23.062Z] [runtime-status] [17216] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.062Z] [runtime-status] [10340] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.063Z] [runtime-status] [17216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.063Z] [runtime-status] [10340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.063Z] [runtime-status] [17216] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-04T00:56:23.063Z] [runtime-status] [10340] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-08-04T00:56:23.064Z] [runtime-status] [17216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.064Z] [runtime-status] [10340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.224Z] [runtime-status] [17216] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-04T00:56:23.224Z] [runtime-status] [10340] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-08-04T00:56:23.224Z] [runtime-status] [17216] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:23.224Z] [runtime-status] [10340] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:23.225Z] [runtime-status] [17216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.225Z] [runtime-status] [10340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.225Z] [runtime-status] [17216] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.226Z] [runtime-status] [10340] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.227Z] [runtime-status] [17216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.227Z] [runtime-status] [10340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.0.1","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.0.1\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-08-04T00:56:23.227Z] [runtime-status] [17216] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:23.227Z] [runtime-status] [10340] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.3.0","resolution":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.3.0\",\"resolution\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-08-04T00:56:23.342Z] [runtime-status] [17216] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-04T00:56:23.342Z] [runtime-status] [10340] Functions runtime initialized. {"cwd":"C:\\Users\\PC\\amazonClone\\amazon-clone\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\PC\\\\amazonClone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2024-08-04T00:56:23.343Z] [runtime-status] [17216] Listening to port: \\?\pipe\fire_emu_0657a064516aefef {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [17216] Listening to port: \\\\?\\pipe\\fire_emu_0657a064516aefef"}}
+[debug] [2024-08-04T00:56:23.343Z] [runtime-status] [10340] Listening to port: \\?\pipe\fire_emu_ff451d2a8cd7d5c9 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [10340] Listening to port: \\\\?\\pipe\\fire_emu_ff451d2a8cd7d5c9"}}
+[debug] [2024-08-04T00:56:23.430Z] [worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: IDLE"}}
+[debug] [2024-08-04T00:56:23.430Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-04T00:56:23.430Z] [worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: BUSY"}}
+[debug] [2024-08-04T00:56:23.445Z] [worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: IDLE"}}
+[debug] [2024-08-04T00:56:23.445Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-08-04T00:56:23.445Z] [worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: BUSY"}}
+[debug] [2024-08-04T00:56:24.024Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 578.9171ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 578.9171ms"}}
+[debug] [2024-08-04T00:56:24.025Z] [worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-42b128c0-4a0f-4a66-ac31-02630dbf1b03]: IDLE"}}
+[debug] [2024-08-04T00:56:24.025Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-08-04T00:56:24.025Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-08-04T00:56:24.026Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-2b54e/us-central1/api/payments/create-2024-08-04T00:56:22.109Z"],"workRunningCount":1}
+[debug] [2024-08-04T00:56:24.035Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 604.3996ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 604.3996ms"}}
+[debug] [2024-08-04T00:56:24.035Z] [worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-569775fc-cf50-43b7-b3b4-8d342bbff0a0]: IDLE"}}
+[debug] [2024-08-04T00:56:24.035Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-08-04T00:56:24.035Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-08-04T00:56:24.035Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

@@ -1,0 +1,13 @@
+.home {
+  width: 100%;
+}
+.home .container {
+  width: 98%;
+  margin: auto;
+}
+.home .container img {
+  max-width: 100%;
+}
+.home .container .home-row {
+  display: flex;
+}

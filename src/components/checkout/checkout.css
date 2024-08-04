@@ -1,0 +1,18 @@
+.checkout {
+  margin: 10px;
+}
+.checkout .checkOutLeft {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout .checkOutLeft img {
+  width: 80%;
+}
+.checkout .checkOutLeft .priceAndProcess {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+}
+.checkout hr {
+  margin: 10px 0;
+}

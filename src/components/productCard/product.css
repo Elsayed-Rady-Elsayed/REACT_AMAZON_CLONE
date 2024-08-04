@@ -1,0 +1,44 @@
+.product {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.product .product-inf {
+}
+.product .product-inf p {
+}
+.product .product-price {
+}
+.product .product-price small {
+}
+.product .product-price strong {
+  font-size: 20px;
+}
+.product .product-rate {
+  margin: 10px 0;
+}
+.product .product-rate ion-icon {
+  color: gold;
+}
+.product img {
+  align-self: center;
+}
+.product button {
+  align-self: center;
+  background-color: #cd9042;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.product:hover {
+  background-color: #131921;
+  color: white;
+}

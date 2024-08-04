@@ -1,0 +1,35 @@
+.checkOutCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 3px;
+  margin: 20px 0;
+}
+.checkOutCard img {
+  height: 150px;
+}
+.checkOutCard .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkOutCard .content .title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.checkOutCard .content .rate {
+  display: flex;
+  gap: 2px;
+  color: gold;
+}
+.price {
+  text-align: start;
+}
+.checkOutCard .content button {
+  background-color: #cd9042;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}

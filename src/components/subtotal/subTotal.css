@@ -1,0 +1,11 @@
+.subTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subTotal button {
+  padding: 4px;
+  border: none;
+  background-color: #cd9042;
+  border-radius: 3px;
+}
