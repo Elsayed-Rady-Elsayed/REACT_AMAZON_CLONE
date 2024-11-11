@@ -5,6 +5,9 @@
   width: 98%;
   margin: auto;
 }
+.homeLandImg {
+  min-width: 100%;
+}
 .home .container img {
   max-width: 100%;
 }
